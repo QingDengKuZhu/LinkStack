@@ -115,7 +115,7 @@ STATUS GetTop(PLINKSTACK pS, Elem *e)
 
 void Push(PLINKSTACK pS, const Elem v)
 {
-	PNODE pNewTop = (PNODE)malloc(NODE);
+	PNODE pNewTop = (PNODE)malloc(sizeof(NODE));
 	if (!pNewTop)
 	{
 		printf("入栈过程中有错误!\n");
@@ -125,7 +125,7 @@ void Push(PLINKSTACK pS, const Elem v)
 	pS->pTop->data = v;
 	pS->pTop->pNext = pNewTop;
 	pS->pTop = pNewTop;
-	return OK
+	return;
 }
 
 STATUS Pop(PLINKSTACK pS, Elem *e)
