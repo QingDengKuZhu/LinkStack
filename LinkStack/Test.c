@@ -21,7 +21,7 @@ void Menu(void)
 {
 	system("cls");
 	gotoxy(10, 5);                        /*在文本窗口中设置光标*/
-	cprintf("			顺序栈的测试			");
+	cprintf("			链式栈的测试			");
 	gotoxy(8, 8);
 	cprintf("-----------------------------Menu-----------------------------\n");
 	gotoxy(8, 9);
